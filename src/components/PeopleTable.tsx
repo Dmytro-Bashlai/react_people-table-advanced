@@ -69,8 +69,11 @@ function getPreparedPeople(
   }
 
   if (normalizedQuery) {
-    preparedPeople = preparedPeople.filter(person =>
-      person.name.toLowerCase().includes(normalizedQuery),
+    preparedPeople = preparedPeople.filter(
+      person =>
+        person.name.toLowerCase().includes(normalizedQuery) ||
+        person.motherName?.toLowerCase().includes(normalizedQuery) ||
+        person.fatherName?.toLowerCase().includes(normalizedQuery),
     );
   }
 
