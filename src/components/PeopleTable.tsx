@@ -1,6 +1,6 @@
 import { useCallback, useContext, useMemo } from 'react';
-import { Loader } from '../components/Loader';
 import { UsersContext } from '../store/PeopleContext';
+import { Loader } from '../components/Loader';
 import { Notification } from '../types/Notification';
 import { PeopleFilters } from '../components/PeopleFilters';
 import { SearchLink } from './SearchLink';
